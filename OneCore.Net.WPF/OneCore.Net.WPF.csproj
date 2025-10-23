@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Version>1.0.0</Version>
+    <Description>OneCore.Net.WPF is a utility library that offers generic WPF helpers such as clipboard access, icon reading, visual tree traversal, window hooks, and more to simplify desktop application development.</Description>
+    <RepositoryUrl>https://github.com/dwndland/OneCore.Net.WPF</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/dwndland/OneCore.Net.WPF</PackageProjectUrl>
+  </PropertyGroup>
+
+    <ItemGroup>
+    <PackageReference Include="OneCore.Net.WinAPI" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,41 @@
+<Project>
+  <PropertyGroup>
+    <!-- Build Defaults -->
+    <LangVersion>latest</LangVersion>
+    <!-- <Nullable>enable</Nullable> -->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Configuration>Release</Configuration>
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+
+    <!-- Package Metadata -->
+    <Authors>David Wendland</Authors>
+    <Company>David Wendland</Company>
+    <Copyright>Copyright (c) 2025 David Wendland</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>Icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags></PackageTags>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+
+    <!-- SourceLink & Symbols -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <!-- Validation -->
+    <EnablePackageValidation>true</EnablePackageValidation>
+
+    <!-- Output -->
+    <!-- <PackageOutputPath>$(MSBuildThisFileDirectory)artifacts\packages</PackageOutputPath> -->
+  </PropertyGroup>
+
+  <!-- Common Files -->
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)README.md" Pack="true" PackagePath="\" />
+    <None Include="$(MSBuildThisFileDirectory)Icon.png" Pack="true" PackagePath="\" />
+    <None Include="$(MSBuildThisFileDirectory)LICENSE" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>

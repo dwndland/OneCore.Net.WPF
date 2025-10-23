@@ -1,0 +1,16 @@
+﻿// -----------------------------------------------------------------------------------------------------------------
+// <copyright file="BindingExtensionCollection.cs" company="dwndland">
+//     Copyright (c) David Wendland. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------------------------------------------------
+
+using System.Collections.ObjectModel;
+
+// ReSharper disable once CheckNamespace
+
+namespace OneCore.Net.WPF;
+
+/// <summary>
+///     Represents a collection of <see cref="BindingExtension" />.
+/// </summary>
+public class BindingExtensionCollection : Collection<BindingExtension>;

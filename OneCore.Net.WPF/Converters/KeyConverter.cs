@@ -6,7 +6,7 @@
 
 using System.Text;
 using System.Windows.Input;
-using OneCore.Net.WinAPI;
+using OneCore.Net.WIN.WinAPI;
 
 namespace OneCore.Net.WPF.Converters;
 

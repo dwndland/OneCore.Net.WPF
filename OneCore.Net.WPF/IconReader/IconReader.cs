@@ -9,7 +9,7 @@ using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using OneCore.Net.WinAPI;
+using OneCore.Net.WIN.WinAPI;
 
 // ReSharper disable once CheckNamespace
 

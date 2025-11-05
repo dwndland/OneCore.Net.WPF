@@ -1,4 +1,4 @@
-![OneCore](https://raw.githubusercontent.com/dwndland/OneCore.Net.WPF/master/Icon.png)
+![OneCore](https://raw.githubusercontent.com/dwndland/OneCore.Net.WPF/refs/heads/master/Icon.png)
 
 # OneCore.Net.WPF Library
 

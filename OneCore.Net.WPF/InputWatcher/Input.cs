@@ -4,7 +4,7 @@
 // </copyright>
 // -----------------------------------------------------------------------------------------------------------------
 
-using OneCore.Net.WinAPI;
+using OneCore.Net.WIN.WinAPI;
 
 // ReSharper disable once CheckNamespace
 

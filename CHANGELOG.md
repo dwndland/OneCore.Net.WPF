@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 ## [Unreleased]
 
+## [1.0.1] - 2025-11-05
+### Changed
+- Lower target framework to .NET 8.0 for broader compatibility across .NET implementations.
+
 ## [1.0.0] - 2025-10-23
 ### Rebrand
 - **Chapter.Net** has been rebranded and continued under the new name **OneCore.Net**.

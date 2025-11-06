@@ -10,6 +10,7 @@ OneCore.Net.WPF is a utility library that offers generic WPF helpers such as cli
 - **ControlFocus:** Brings an easy possibility to focus another UI control.
 - **IconReader:** Provides a way to read file, extension and folder icons with and without caching.
 - **InputWatcher:** Allows to listen for global keyboard or mouse actions without the app be in focus.
+- **MouseHelper** Provides easy check if the mouse is within a specific control by using low level pixel calculations.
 - **PopupHandler:** Implements an auto close event for custom WPF popups.
 - **SystemTexts:** Loads translations for the current windows language from the system.
 - **UIDispatcher:** Gives easy access to the current UI dispatcher and allows override for unit tests.
@@ -119,7 +120,20 @@ OneCore.Net.WPF is a utility library that offers generic WPF helpers such as cli
     }
     ```
 
-6. **PopupHandler:**
+6. **MouseHelper**
+    - Check if the mouse is within a control.
+    ```csharp
+    protected override void OnPreviewQueryContinueDrag(QueryContinueDragEventArgs e)
+    {
+        if (_dropPreviewAdorner == null)
+            return;
+
+        if (!MouseHelper.IsMouseInside(this))
+            RemovePreviews();
+    }
+    ```
+
+7. **PopupHandler:**
     - Auto close a custom popup.
     ```csharp
     public class Control : ContentControl
@@ -142,13 +156,13 @@ OneCore.Net.WPF is a utility library that offers generic WPF helpers such as cli
     }
     ```
 
-7. **SystemTexts:**
+8. **SystemTexts:**
     - Load the translation for the "Cancel" button from windows.
     ```csharp
     var cancelLabel = SystemTexts.GetString(SystemTexts.CANCEL_CAPTION);
     ```
 
-8. **UIDispatcher:**
+9. **UIDispatcher:**
     - Use the UI dispatcher and override on unit tests.
     ```csharp
     public void ViewModel : ObservableObject
@@ -191,7 +205,7 @@ OneCore.Net.WPF is a utility library that offers generic WPF helpers such as cli
     }
     ```
 
-9. **VisualTreeAssist:**
+10. **VisualTreeAssist:**
     - Find the first child button.
     ```csharp
     var childButton = VisualTreeAssist.FindChild<Button>(this);
@@ -205,7 +219,7 @@ OneCore.Net.WPF is a utility library that offers generic WPF helpers such as cli
     var firstUserControlInWindow = VisualTreeAssist.GetParentsUntil<UserControl, Window>(this);
     ```
 
-10. **WindowHooks:**
+11. **WindowHooks:**
     - Hook in to global keyboard events
     ```csharp
     public void HookIn()
@@ -224,7 +238,7 @@ OneCore.Net.WPF is a utility library that offers generic WPF helpers such as cli
     }
     ```
 
-11. **WindowObserver:**
+12. **WindowObserver:**
     - Do something if user double clicked the window title bar.
     ```csharp
     public partial class MainView

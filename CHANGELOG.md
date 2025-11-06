@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 ## [Unreleased]
 
+## [1.0.2] - 2025-11-06
+### Added
+- Added mouse helper to check if the mouse is over a specific UI element by using low level pixel calculation.
+
 ## [1.0.1] - 2025-11-05
 ### Changed
 - Lower target framework to .NET 8.0 for broader compatibility across .NET implementations.
